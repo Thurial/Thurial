@@ -1,0 +1,5 @@
+<!-- Une ligne de commande pour un Dock plus rapide -->
+defaults write com.apple.dock autohide-delay -float 0 && killall Dock
+
+<!-- Retrouver le délai normal d'apparition (Dans le cas où vous voudriez revenir au paramètre système initial) -->
+defaults delete com.apple.dock autohide-delay && killall Dock
